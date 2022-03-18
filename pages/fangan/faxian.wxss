@@ -1,0 +1,72 @@
+.page{
+  background-color: white;
+}
+.page__hd{
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 10px;
+  margin-bottom: 15rpx;
+  background-color: #F0F8FF;
+ opacity:0.6; 
+}
+.radio-group{
+  border-bottom: 1px solid #ddd;
+}
+.radio{
+  font-size: 30rpx;
+  display: block;
+  border-top: 1px solid #ddd;
+  padding: 5px;
+  margin-bottom: 5rpx;
+}
+
+.mweui-cells__title {
+  margin-top: 5rpx;
+  margin-bottom: 0.3em;
+  color: rgb(8, 20, 18);
+  font-size: 16px;
+}
+.mweui-textarea {
+  display: block;
+  width: 100%;
+  height: 200rpx;
+  background-color: #ecfcef;
+}
+
+.mweui-cell__bd {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  background-color: #fff;
+}
+.mweui-textarea-counter {
+  color: #f0f0f0;
+  text-align: right;
+}
+
+.tijiao{
+  margin-top: 25rpx;
+  width: 55%;
+  display: felx;
+  height: 50rpx;
+}
+.centerPage-save-btn {
+  margin: 70rpx 170rpx;
+  height:90rpx;
+  line-height:90rpx;
+  background-color: #9db9de;
+   color: #fff;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.top {  
+  margin-top: 10px;  
+  height: 150px;
+  width: 100%;
+  display: flex;  
+  justify-content: center;  
+  flex-direction: column;  
+  align-items: center;  
+  color: #999;  
+}  

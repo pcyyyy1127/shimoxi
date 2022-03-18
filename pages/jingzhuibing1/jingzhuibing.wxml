@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="content">
+  <!-- 标题 -->
+  <view class="author-date"> 
+        <text class="date">颈椎病治疗小妙招</text>
+        </view>
+        <!-- 内容 -->
+         <text class="title">方法一：解除痉挛</text>
+         <image class="image" src="/images/list/4.jpg"></image>
+         <text class="article-content">   无论外伤还是劳损，颈肌和软组织痉挛都存在，导致颈部软组织对颈椎正常的平衡力学关系发生矛盾，部分紧张，部分松弛。按摩使肌肉痉挛消除，由紧张僵硬、缺乏弹性变成了放松、柔软、恢复弹性。\n</text>
+          <!-- 内容 -->
+          <text class="title">方法二：解除粘连</text>
+         <image class="image" src="/images/list/5.jpg"></image>
+         <text class="article-content">   颈椎病中出血、瘢痕和组织粘连，影响了颈部力学关系，造成了压迫因素，影响了神经和血管功能。推拿通过弹拨和剥离解除粘连，改善了血循环，疏通了经络，滑利了关节。\n</text>
+         <!-- 内容 -->
+          <text class="title">方法三：解除粘连</text>
+         <image class="image" src="/images/list/6.jpg"></image>
+         <text class="article-content">   穴位和痛点、敏感点与颈椎病疼痛、麻木、酸胀及萎缩无力等症状有密切关系。在解除了痉挛，分离了粘连后，定点找深部压痛点、穴位、敏感点对颈椎病治疗有重要作用。不但能解除颈强、缓解疼痛，还能疏通经络、改善循环、防止变性引起病理变化。\n</text>
+         <!-- 内容 -->
+          <text class="title">方法四：复位</text>
+         <image class="image" src="/images/list/7.jpg"></image>
+         <text class="article-content">   关节脱位、椎体移位、骨赘、先天畸形形成相对的压迫因素，而因软组织不平衡造成或加重了上述病理变化，使颈椎病形成严重临床症状。治疗的目的主要是对这一环节的改善，这是复位的重要性所在。颈椎病按摩治疗效果也由此下结论。这是十分重要的治疗原则。\n</text>
+ 
+    </view>
+
+

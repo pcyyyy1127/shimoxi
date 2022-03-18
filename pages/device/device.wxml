@@ -1,0 +1,52 @@
+<view class="container">
+  <view class='container-top'>
+
+    <view class='setname'>
+      <text style="font-size:medium;word-break:break-all">设备名称：{{name}}</text>
+    </view>
+    <view class='setname'>
+      <text style="font-size:x-small;color:gray;word-break:break-all">设备ID：{{connectedDeviceId}}        </text>
+    </view >
+    <view class='setname'>
+      <text style="font-size:x-small;color:gray">状态：{{connected?"已连接":"已断开"}}</text>
+    </view>
+  </view>
+
+  <view class="section2">
+    <view class="section__title">设定温度:</view>
+    <picker bindchange="bindPickerChange1" model="selector" value="{{index}}" range="{{array}}">
+      <view class="picker">
+      <text>{{array[index]}}℃</text>
+      </view>
+    </picker>
+  </view>
+
+  <view class="section2">
+    <view class="section__title">设定时间:</view>
+    <picker bindchange="bindPickerChange2" model="selector" value="{{index2}}" range="{{array2}}">
+      <view class="picker">     
+        <text>{{array2[index2]}}分钟</text>
+      </view>
+    </picker>
+  </view>
+    <view class="section">
+    <view class="section__title">当前温度：</view>       
+     <text>{{receiveText}}℃</text>
+  </view> 
+  
+   <view class="section">
+    <view class="section__title">加热的时间:</view>     
+    <text>{{time}}s</text>
+  </view>
+   <view class="section">
+    <view class="section__title">进入人体药物:</view>   
+        <text>{{drug}}ng</text>
+  </view>
+  <view class="anniu">
+  <button type="primary" class="button3" bindtap="switch1Change">开始加热</button>
+  <button type="warn" class="button" bindtap="Send3">停止加热</button>
+  </view>
+</view>
+
+
+

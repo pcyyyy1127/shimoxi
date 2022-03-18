@@ -1,0 +1,38 @@
+.container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 
+ec-canvas {
+  width: 100%;
+  height: 70%;
+}
+.btn-view {
+ width: 90%;
+}
+
+.btn {
+ justify-content:center;
+ position: fixed;
+ margin-left: 13px;
+ margin-right: 10px;
+  width: 690rpx;
+  bottom: 30rpx;
+  background-color: #1AAD19;
+  color: white;
+  border-radius: 10px;
+}
+.author-date{
+ font-size:50rpx;
+  font-weight: 600;
+  color:rgb(95, 93, 93);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

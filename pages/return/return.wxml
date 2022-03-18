@@ -1,0 +1,67 @@
+<!-- 服务评价 -->
+<view class="service">
+  <!-- 评分 -->
+  <view class='score'>
+    <view class='left'>总体使用评分</view>
+    <view class='right'>
+      <view bindtap="starTap" data-index="{{index}}" class="star" wx:for="{{userStars}}" wx:key="index">
+        <image src="{{item}}"></image>
+      </view>
+      <text class='rtxt'>{{wjxScore}}.0分</text>
+    </view>
+  </view>
+  <view class='score'>
+    <view class='left'>膏药治疗评分</view>
+    <view class='right'>
+      <view bindtap="starTap2" data-index="{{index}}" class="star" wx:for="{{userStars2}}" wx:key="index">
+        <image src="{{item}}"></image>
+      </view>
+      <text class='rtxt'>{{wjxScore2}}.0分</text>
+    </view>
+  </view>
+  <view class='score'>
+    <view class='left'>程序使用评分</view>
+    <view class='right'>
+      <view bindtap="starTap3" data-index="{{index}}" class="star" wx:for="{{userStars3}}" wx:key="index">
+        <image src="{{item}}"></image>
+      </view>
+      <text class='rtxt'>{{wjxScore3}}.0分</text>
+    </view>
+  </view>
+  <!-- 内容 -->
+  <view class='content'>
+    <view class='left'>内容</view>
+    <view class='right'>
+      <view bindtap='label' class="{{attitude===true ? 'labelColor':''}}" data-index="{{attitude}}">
+        加热稳定
+      </view>
+      <view bindtap='label1' class="{{time===true? 'labelColor':''}}" data-index="{{time}}">
+        治疗效果好
+      </view>
+      <view bindtap='label2' class="{{efficiency===true?'labelColor':''}}" data-index="{{efficiency}}">
+        使用舒服
+      </view>
+      <view bindtap='label3' class="{{environment===true?'labelColor':''}}" data-index="{{environment}}">
+        智能化控制
+      </view>
+      <view bindtap='label4' class="{{professional===true?'labelColor':''}}" data-index="{{professional}}">
+        很专业
+      </view>
+    </view>
+  </view>
+  <!-- 图片 -->
+</view>
+<!-- textarea -->
+<view class="conts">
+  <textarea class="areas" placeholder='评价' minlength="{{min}}" maxlength="{{max}}" bindinput="inputs">
+    
+  </textarea>
+</view>
+<view class='bottom'>
+  <!-- <view class="NDI" bindtap='buttonTap'>
+    <radio class='button' checked="{{checkNDI}}" type='primary'>
+      <text style="display:inline-block;font-size:12px;">填写NDI指数表</text>
+    <text style="color:red;display:inline-block;font-size:12px;">（必填）</text></radio>   
+  </view> -->
+  <button class='btn' bindtap="post">提交评价</button>
+</view>

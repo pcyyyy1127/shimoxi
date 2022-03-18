@@ -1,0 +1,7 @@
+<!--pages/lianxikefu/lianxikefu.wxml-->
+<view class='wenzi'>
+<text>
+如果需要帮助，请联系客服
+客服QQ：992248561
+</text>
+</view>

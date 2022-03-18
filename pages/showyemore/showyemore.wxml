@@ -1,0 +1,28 @@
+<view class='list'>
+    <block wx:for="{{array}}" wx:key="{{index}}">
+
+      <view class='item' bindtap='seeDatil' id='0'>
+        <view>
+         <image class="list-img" src="{{item.img}}"></image> 
+          <!-- <image src='item.img' style='width:80px;height:70px;'></image> -->
+        </view>
+        <view class='desc'>
+          <navigator url="../../pages/jingzhuibing1/jingzhuibing">
+            <view class='title'>{{item.title}}</view>
+          </navigator>
+          <view class="list-content">
+          {{item.content}}
+          </view>
+          <view class='count'>
+            <view class="type">#{{item.type}}</view>
+            <view class="count_right">
+              <view class='liulan'>浏览:{{item.liulan}}</view>
+              <view class='pinglun'>评论:{{item.pinglun}}</view>
+            </view>
+            
+          </view>
+        </view>
+      </view>
+      <view class='hr2'></view>
+    </block>
+  </view>

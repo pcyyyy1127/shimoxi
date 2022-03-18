@@ -1,0 +1,18 @@
+<!-- 蓝牙搜索 -->
+<view class="container">
+  <scroll-view scroll-y style="width:690rpx;height:{{list_height}}rpx">
+    <block wx:for="{{devicesList}}" wx:key="deviceId">
+      <view class="list-item" id="{{item.deviceId}}" bindtap="Connect">
+        <view style="display:flex;flex-direction:column;width:80%">
+          <view style="font-size:medium;word-break:break-all">设备名称: {{item.name}}</view>
+          <view style="font-size:x-small;color:gray;word-break:break-all">设备ID: {{item.deviceId}}</view>
+          <view style="font-size:x-small;color:gray;word-break:break-all">信号强度RSSI: {{item.RSSI}}</view>
+          <view style="font-size:x-small;color:gray;word-break:break-all">Service数量: {{utils.len(item.advertisServiceUUIDs)}}</view>
+        </view>
+        <image style="width:36px;height:36px" mode="aspectFit" src="/images/bluetooth.png"></image>
+      </view>
+    </block>
+  </scroll-view>
+  <button class="button" loading="{{searching}}" bindtap="Search">{{searching?"搜索中...":"搜索蓝牙设备"}}</button>
+</view>
+

@@ -1,0 +1,5 @@
+<!--pages/zhifujilu/zhifujilu.wxml-->
+<view class='wenzi'>
+<text>很抱歉，
+您暂时还没有治疗记录</text>
+</view>

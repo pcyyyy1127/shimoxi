@@ -1,0 +1,44 @@
+<!--pages/zhuce/zhuce.wxml-->
+<!--
+变量说明：
+showTopTips ： 是否显示提示信息
+errorMsg ： 错误信息
+windowHeight ：设备的窗口的高度
+windowWidth ： 设备的窗口的宽度
+account ： 账号
+password ：密码
+subPassword ：确认密码
+-->
+ <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="page centerPage-wrap" id="userCenterPage" data-router="userCenterPage">
+      <view class="centerPage-user-info">
+        <view class="js-change-cover" bindtap="choosePhoto">
+          <image class="cover-thumb" src="/images/1.jpg"></image>
+          <label class="ico-moon icon-rightarrow"></label>
+        </view>
+      </view>
+
+    
+      <view class="centerPage-user-info">
+        <view class="centerPage-info-item">
+          <label>账号</label>
+          <input class="nickname tuokuan" placeholder="请输入您的账号" value="{{account}}" bindinput='formName' name="account" />
+        </view>
+        
+        <view class="centerPage-info-item" >
+          <label>密码</label>
+          
+          <input class="nickname tuokuan" placeholder="请输入密码" type="password" value="{{password}}" name="password" bindinput='formName2'/>
+        </view>
+        <view class="centerPage-info-item" >
+          <label>确认</label>
+          
+          <input class="nickname tuokuan" placeholder="请再次输入密码" type="password" value="{{password}}" name="subPassword" bindinput='formName2'/>
+        </view>
+      </view>
+      
+        <button class="centerPage-save-btn"  formType='submit'>注册</button>   
+      
+    </view>
+ </form>
+

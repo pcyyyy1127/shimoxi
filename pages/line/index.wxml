@@ -1,0 +1,13 @@
+
+<view class="container">
+<view class="author-date"> 
+<text class="date">药物释放情况</text>
+  </view>
+  <ec-canvas id="mychart-dom-multi-bar" canvas-id="mychart-multi-bar" ec="{{ ecBar }}"></ec-canvas>
+  <ec-canvas id="mychart-dom-multi-scatter" canvas-id="mychart-multi-scatter" ec="{{ ecScatter }}"></ec-canvas>
+</view>
+<navigator url="../../pages/NDI/NDI">
+<view class='btn-view'>
+    <button class='btn'>NDI测评</button>
+</view>
+ </navigator>

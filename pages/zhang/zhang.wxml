@@ -1,0 +1,29 @@
+<!-- pages/zhang/zhang.wxml -->
+<view class="container">
+    <view class="content1">
+        <view class="left">
+            <image class="doctorImg" src="{{doctorInfo.imgUrl}}"></image>
+        </view>
+        <view class="right">
+            <view class="doctorName">
+                <text>{{doctorInfo.name}}</text>
+            </view>
+            <view >
+                <text class="doctorType">{{doctorInfo.type}}</text>
+                <text class="doctorPosition">{{doctorInfo.position}}</text>
+            </view>
+            <view >
+                <text class="doctorGrade">{{doctorInfo.grade}}</text>
+                <text class="doctorHospital">{{doctorInfo.hospital}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="content2">
+        <view class="title">个人简介</view>
+        <view class="content">{{doctorInfo.brief}}</view>
+    </view>
+    <view class="content3">
+        <view class="title">擅长方向</view>
+        <view class="content">{{doctorInfo.skill}}</view>
+    </view>
+</view>

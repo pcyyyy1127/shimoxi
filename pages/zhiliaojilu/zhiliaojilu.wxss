@@ -1,0 +1,7 @@
+.wenzi{
+  color: #9db9de;
+  font-size: 16px;
+  line-height: 40px;
+  
+  padding:60px;
+}

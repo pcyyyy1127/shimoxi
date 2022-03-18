@@ -1,0 +1,16 @@
+<view class='top'>
+<image src="/images/zhiliao/2.jpg"/>
+</view>
+<!--index.wxml-->
+<view class="content">
+  <!-- 标题 -->
+  <view class="author-date"> 
+        <text class="date">您的最佳治疗方案</text>
+        </view>
+        <!-- 内容 -->
+      <text class="article-content"> 您的最佳使用时间为：{{time}}min\n</text>
+      <text class="article-content"> 您的最佳使用温度为：{{temp}}℃\n</text>
+<navigator url="../../pages/kaishishiyong/kaishishiyong">
+<view class="centerPage-save-btn" bindtap="saveUserInfo">开始治疗</view>  
+ </navigator>
+ </view>

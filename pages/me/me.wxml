@@ -1,0 +1,37 @@
+<view class="container">
+  <view bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{touxiang}}" background-size="cover">
+      {{wx.chooseImage}}
+    </image>
+    <text class="userinfo-nickname" wx:if="{{name!='登录'}}">{{name}}</text>
+    <text class="userinfo-nickname" wx:else bindtap="routerLogin">{{name}}</text>
+  </view>
+</view>
+<view data-url="../../pages/gerenxinxi/gerenxinxi" class="centerPage-save-btn" bindtap="router">
+  <text>个人中心</text>
+  <view class="right">
+    <image class="img" src="../../images/right.png"></image>
+  </view>
+</view>
+<view data-url="../../pages/zhiliaojilu/zhiliaojilu" class="centerPage-save-btn" bindtap="router">
+  <text>治疗记录</text>
+  <view class="right">
+    <image class="img" src="../../images/right.png"></image>
+  </view>
+</view>
+<navigator url="../../pages/lianxikefu/lianxikefu">
+  <view class="centerPage-save-btn">
+    <text>联系客服</text>
+    <view class="right">
+      <image class="img" src="../../images/right.png"></image>
+    </view>
+  </view>
+</navigator>
+<navigator url="../../pages/lianxikefu/lianxikefu">
+  <view class="centerPage-save-btn">
+    <text>关于我们</text>
+    <view class="right">
+      <image class="img" src="../../images/right.png"></image>
+    </view>
+  </view>
+</navigator>

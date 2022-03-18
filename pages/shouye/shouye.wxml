@@ -1,0 +1,59 @@
+<view class="content">
+  <view class='img'>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}" wx:key="index">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="nav">
+    <view class="nav-item" data-url="../../pages/kaishishiyong/kaishishiyong" bindtap="router">
+      <view class="nav-img">
+        <image src="icon/kaishishiyong.png" style="width:31px;height:31px"></image>
+      </view>
+      <view>开始使用</view>
+    </view>
+    <view class="nav-item" data-url="../../pages/yishengzixun/yishengzixun" bindtap="router">
+      <view class="nav-img">
+        <image src="icon/yisheng.png " style="width:31px;height:31px"></image>
+      </view>
+      <view>医生咨询</view>
+    </view>
+  </view>
+  <view class='head'>
+    <view class="circle_view">
+      <view class="circle"></view>
+      <view class="circle circle_orange"></view>
+    </view>
+    <view class="head_title">健康小课堂</view>
+    <navigator url="../showyemore/showyemore">
+      <view class='right' bindtap="moreData">更多</view>
+    </navigator>
+  </view>
+  <view class='list'>
+    <block wx:for="{{array}}" wx:key="index">
+      <view class='item' bindtap='seeDatil' id='0'>
+        <view>
+          <image class="list-img" src="{{item.img}}"></image>
+          <!-- <image src='item.img' style='width:80px;height:70px;'></image> -->
+        </view>
+        <view class='desc'>
+          <navigator url="../../pages/jingzhuibing1/jingzhuibing">
+            <view class='title'>{{item.title}}</view>
+          </navigator>
+          <view class="list-content">{{item.content}}</view>
+          <view class='count'>
+            <view class="type">#{{item.type}}</view>
+            <view class="count_right">
+              <view class='liulan'>浏览:{{item.liulan}}</view>
+              <view class='pinglun'>评论:{{item.pinglun}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='hr2'></view>
+    </block>
+  </view>
+</view>

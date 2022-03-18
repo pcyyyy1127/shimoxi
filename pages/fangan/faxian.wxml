@@ -1,0 +1,20 @@
+<view class='top'>
+  <image src="/images/zhiliao/1.jpg" />
+</view>
+<view class='page'>
+  <block wx:for-items="{{questions}}" wx:key="{{index}}">
+    <view class="page__hd">
+    <text class="page__title">第{{index+1}}题：</text>
+    <text class="page__desc">{{item.title}}</text>
+    <view class="section section_gap">
+      <radio-group class="radio-group" bindchange="radioChange" data-iid='{{index}}'>
+        <radio class="radio" wx:for-items="{{item.content}}" wx:for-item="content" wx:key="name" value="{{content.name}}" checked="{{selectIndex!='reset'?true:false}}">
+          <text>{{content.value}}</text>
+        </radio>
+      </radio-group>
+    </view>
+  </view>
+  </block>
+  
+</view>
+<view class="centerPage-save-btn" bindtap="saveUserInfo">获取方案</view>

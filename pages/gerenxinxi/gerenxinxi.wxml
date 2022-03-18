@@ -1,0 +1,98 @@
+<!-- pages/gerenxinxi/gerenxinxi.wxml -->
+<!-- 个人信息修改页 -->
+<block wx:if="{{isNew}}">
+  <form bindsubmit="bindButtonTap">
+    <view class='page'>
+      <view class="itemView">
+        <text class="title">姓名：</text>
+        <input class="input" name="name" placeholder="请输入您的姓名" value='{{name}}' bindinput="userNameInput" />
+      </view>
+      <view class="itemView">
+        <text class="title">年龄：</text>
+        <input class="input" name="age" placeholder="请输入您的年龄" value='{{age}}' bindinput="userAgeInput" />
+      </view>
+      <view class='page'>
+        <view class="page__hd">
+          <text class="sexTitle">性别:</text>
+          <view class="sectionSex">
+            <radio-group class="radio-group" name="sex" bindchange="radioChange" data-iid='0'>
+              <radio class="radio" wx:for-items="{{items}}" wx:key="name" value="{{item.name}}" checked="{{item.checked}}">
+                <text>{{item.value}}</text>
+              </radio>
+            </radio-group>
+          </view>
+        </view>
+      </view>
+      <view class="itemView">
+        <text class="cardTitle title">身份证号码：</text>
+        <input class="card input" name="cardNo" placeholder="请输入您的身份证" value='{{cardNo}}' bindinput="userNumberInput" />
+      </view>
+      <view class="section">
+        <view class="section__title">地址：</view>
+        <picker mode="region" name="address" bindchange="bindRegionChange" value="{{address}}">
+          <view class="picker">{{address[0]}},{{address[1]}},{{address[2]}}</view>
+        </picker>
+      </view>
+      <view class="section">
+        <view class="section__title">颈椎病类型：</view>
+        <picker mode = "selector" bindchange="bindPickerChange" name="disType" value="{{disType}}" range="{{array}}">
+          <view class="picker">{{disType}}</view>
+        </picker>
+      </view>
+      <view class="section">
+        <view class="section__title">确诊时间：</view>
+        <picker mode="date" value="{{date}}" name="date" start="2016-09-01" end="2099-09-01" bindchange="bindDateChange">
+          <view class="picker">{{date}}</view>
+        </picker>
+      </view>
+      <navigator url="../../pages/me/me">
+        <view class="btn-area">
+          <button form-type="submit">保存</button>
+        </view>
+      </navigator>
+      <view>{{userName}}</view>
+      <view class="viewName" style="margin-top: 60px;"></view>
+    </view>
+  </form>
+</block>
+
+
+<!-- 个人信息展示页 -->
+<block wx:else>
+  <view class="container">
+    <view class="item item-img">
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{imgUrl}}" mode="cover"></image>
+    </view>
+    <view class="item">
+      <text class="left">姓名：</text>
+      <text class="right">{{name}}</text>
+    </view>
+    <view class="item">
+      <text class="left">年龄：</text>
+      <text class="right">{{age}}</text>
+    </view>
+    <view class="item">
+      <text class="left">性别：</text>
+      <text class="right">{{sex}}</text>
+    </view>
+    <view class="item">
+      <text class="left">身份证号码：</text>
+      <text class="right">{{cardNo1}}</text>
+    </view>
+    <view class="item">
+      <text class="left">地址：</text>
+      <text class="right">{{address}}</text>
+    </view>
+    <view class="item">
+      <text class="left">颈椎病类型：</text>
+      <text class="right">{{disType}}</text>
+    </view>
+    <view class="item">
+      <text class="left">确诊时间：</text>
+      <text class="right">{{date}}</text>
+    </view>
+    <view class="item item-btn">
+      <button class="btn" bindtap='updatePage'>修改</button>
+    </view>
+  </view>
+</block>

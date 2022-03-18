@@ -1,0 +1,43 @@
+<!--pages/yishengzixun/yishengzixun.wxml-->
+<view class="bq"> 
+ <view class="flex">
+    <image src="../../images/zhang.jpg" class="yisheng_img"></image>
+    <text class="shuxing">
+    姓名：<text class="wenzi">张卫林</text>  
+    医生编号：<text class="wenzi">123</text>
+    医生简介：<text class="wenzi">张卫林,男，主任医师、教授，骨科副主任，擅长颈椎病的治疗和康复。</text>
+    </text>
+
+        <button class="btn" bindtap="enterRoom123">
+            在线问诊
+        </button>
+</view>
+
+<view class="flex">
+    
+    <image src="../../images/wang.jpg" class="yisheng_img"></image> 
+
+    <text class="shuxing">
+    姓名：<text class="wenzi">王淑婷</text>  
+    医生编号：<text class="wenzi">124</text>
+    医生简介：<text class="wenzi">王淑婷，女，主任医师，擅长颈椎病等脊柱外科疾病，关节外科的临床与研究。</text>
+    </text>
+        <button class="btn" bindtap="enterRoom124"> 
+            在线问诊
+        </button> 
+</view>
+
+<view class="flex">
+    
+    <image src="../../images/gao.jpg" class="yisheng_img"></image>
+
+    <text class="shuxing">
+    姓名：<text class="wenzi">高元友</text>  
+    医生编号：<text class="wenzi">125</text>
+    医生简介：<text class="wenzi">高元友，男，主治医师，医院骨科主任，擅长治疗颈椎病，有多年临床经验。</text>
+    </text>
+        <button class="btn" bindtap="enterRoom125">
+            在线问诊
+        </button>   
+</view>
+</view>

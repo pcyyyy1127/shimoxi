@@ -1,0 +1,77 @@
+.list {
+    padding: 0px 10px;
+    background: #F9F9F9;
+}
+
+.list-img {
+    width: 90px;
+    height: 90px;
+    margin: 10px 0px 0px 10px;
+    border-radius: 5px;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.desc {
+    margin-left: 10px;
+    line-height: 30px;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.list-content {
+    padding: 0px 5px 0px 0px;
+    display: -webkit-box;
+    font-size: 28rpx;
+    color: #000000;
+    line-height: 40rpx;
+    height: 120rpx;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.count {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    color: #999999;
+}
+
+.type {
+    display: -webkit-box;
+    color: #789ac6;
+    width: 70px;
+    line-height: 30px;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.count_right {
+    position: absolute;
+    right: 0px;
+    font-size: 12px;
+}
+
+.liulan {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.pinglun {
+    margin-right: 15px;
+    display: inline-block;
+}

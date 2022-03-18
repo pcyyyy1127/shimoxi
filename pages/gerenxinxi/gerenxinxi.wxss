@@ -1,0 +1,198 @@
+
+.input{
+  display: inline-block;
+  height: 34px;
+  line-height: 30px;
+  padding: 2px;
+  width: 70%;
+}
+.title{
+  width: 20%;
+  height: 34px;
+  position: relative;
+  top: -13px;
+  margin-left:20rpx;
+}
+.cardTitle{
+  height: 34px;
+  width: 25%; 
+}
+.card{
+  height: 34px;
+  width:60%;
+}
+.sexTitle,.sectionSex{
+  height: 34;
+  display: inline-block;
+}
+.sexTitle{
+  margin-left: 20rpx;
+}
+.sectionSex{
+  margin: 10px 22rpx 5px;
+  background-color: #F0F8FF;
+  opacity:0.6;
+  border-radius: 2px; 
+}
+
+.label-1, .label-2{
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+.label-1__text, .label-2__text {
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.label-1__icon {
+    margin-top: 10px;
+     margin-left: 10px;
+    position: relative;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+    background: #fcfff4;
+}
+
+.label-1__icon-checked {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 12px;
+    height: 12px;
+    background: #7b9fce;
+}
+
+
+.label-2__icon {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    background: #fcfff4;
+    border-radius: 50px;
+}
+
+.label-2__icon-checked {
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 12px;
+    height: 12px;
+    background: #7b9fce;
+    border-radius: 50%;
+}
+
+.label-4_text{
+    text-align: center;
+    margin-top: 15px;
+}
+.button-hover {
+  margin-top: 15px;
+  background-color:#9db9de;
+}
+.btn-area {
+ margin: 70rpx 50rpx;
+  height:90rpx;
+  line-height:90rpx;
+  background-color: #9db9de;
+   color: #fff;
+  border-radius: 2px;
+  text-align: center;
+}
+.data{
+  margin-left: 20rpx;
+  margin-bottom: 5px;
+  font-size: 40rpx; 
+  display: flex; 
+  align-items: center; 
+ vertical-align: center; 
+  justify-content: center; 
+  flex-direction: row;
+  font-weight: 600;
+  
+}
+.itemView{
+  position: relative;
+  margin: 10px 22rpx 5px;
+  background-color: #F0F8FF;
+  opacity:0.6; 
+  border-radius: 2px;
+  border: solid 1px #cecece;
+}
+.page__hd{
+  margin: 10px 22rpx 5px;
+  background-color: #F0F8FF;
+  opacity:0.6;
+  border: solid 1px #cecece;
+  
+}
+.section{
+  margin: 10px 22rpx 5px;
+  background-color: #F0F8FF;
+  opacity:0.6;
+  border-radius: 2px; 
+  border: solid 1px #cecece;
+}
+.section__title{
+  display: inline-block;
+  margin-left: 20rpx;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  height: 30px;
+  background-color: #F0F8FF;
+  opacity:0.6; 
+}
+picker{
+  display: inline-block;
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+.item{
+  height: 70rpx;
+  background-color: #fff;
+  margin: 20rpx;
+  display: flex;
+  border-radius: 20rpx;
+  align-items: center;
+}
+.left{
+  display: flex;
+  justify-content: flex-start;
+  flex-grow: 1;
+}
+.right{
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+  color: #ccc;
+  margin-right: 20rpx;
+}
+.item-btn{
+  height: 200rpx;
+}
+.btn{
+  width: 600rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 40rpx;
+  margin: 0 auto;
+  border-radius: 20rpx;
+}
+.item-img{
+  margin: unset;
+  border-radius: unset;
+  padding: 50rpx 0;
+  height: 128rpx;
+  background-color: #F2f2f2;
+} 
